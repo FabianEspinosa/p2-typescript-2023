@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0e17;
+}
+body h1 {
+    margin: 2rem 0 1rem 0;
+    color: #a7a9be;
+    text-align: center;
+    font-size: 3rem;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 2rem;
+}
+.yugicard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.yugicard a {
+  margin-bottom: 0.5rem;
+}
+.yugicard p {
+    color: #a7a9be;
+    cursor: default;
+}
