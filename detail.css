@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0e17;
+  font-family: monospace;
+  color: #a7a9be;
+  cursor: default;
+}
+body {
+  padding: 8rem;
+}
+body a {
+  color: #a7a9be;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 3rem;
+}
+body i {
+  cursor:pointer
+}
+body i:hover {
+  color: #fff;
+}
+body .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.card-img-container {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.card-img-container img {
+  border-radius: 1rem;
+  cursor: zoom-in;
+}
+.card-img-container img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+.card-desc-container {
+  grid-area: 1 / 2 / 2 / 5;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-desc-container h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.card-desc {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 20%;
+  justify-content: space-between;
+}
+.card-desc div {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+.card-desc div h2 {
+  margin-bottom: 1rem;
+}
+.card-desc div p {
+  font-size: 13pt;
+}
+.card-desc div span {
+  display: flex;
+  align-items: center;
+}
+.card-desc div span img {
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+.card-desc div span p {
+  font-size: 13pt;
+}
+.card-desc div span i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.card-text {
+  margin-top: auto;
+  padding-bottom: 2rem;
+  min-height: 35%;
+}
+.card-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card-text p {
+  font-size: 1.5rem;
+}

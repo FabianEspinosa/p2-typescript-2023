@@ -2,27 +2,42 @@
   margin: 0;
   padding: 0;
   background-color: #0f0e17;
+  font-family: monospace;
+  color: #a7a9be;
 }
 body h1 {
-    margin: 2rem 0 1rem 0;
-    color: #a7a9be;
-    text-align: center;
-    font-size: 3rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  font-size: 3rem;
 }
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 2rem;
 }
 .yugicard {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 2rem;
+  background-color: transparent;
 }
 .yugicard a {
   margin-bottom: 0.5rem;
 }
 .yugicard p {
-    color: #a7a9be;
-    cursor: default;
+  cursor: default;
+  text-align: center;
+  font-size: 13pt;
+  font-weight: bold;
+  background-color: transparent;
 }
+.yugicard img {
+  border-radius: 0.5rem;
+}
+.yugicard:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
